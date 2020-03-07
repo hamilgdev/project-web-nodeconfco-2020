@@ -2,7 +2,7 @@ import React from "react"
 
 import RutaN from "../images/ruta-n"
 import Hotel10 from "../images/hotel10"
-import LogoRutaN from "../images/logo_rutaN"
+import LogoRutaN from "../images/photo_rutaN"
 
 import "./Venue.scss"
 

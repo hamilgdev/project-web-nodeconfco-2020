@@ -1,0 +1,12 @@
+.btn {
+  padding: 8px 64px;
+  font-family: var(--f-primary);
+  text-transform: uppercase;
+  color:var(--c-text);
+  background-color: var(--c-five);
+  font-size: 16px;
+  border-radius: 10px;
+  transition: .3s ease-out;
+
+  &:hover { background-color: var(--c-primary) !important; }
+}

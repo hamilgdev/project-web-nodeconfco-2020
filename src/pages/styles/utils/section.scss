@@ -1,28 +1,30 @@
-// estilos para los titulos y descripcion de cada sesion
-
 .section__title {
-    margin-top: 0;
-    margin-bottom: em(16px);
-    font-size: em(38px);
-    text-align: center;
-    font-family: var(--font-title);
-    font-weight: var(--bold);
-    text-transform: uppercase;
-  
-    @media only screen and (min-width : 1024px){
-      font-size: em(42px);
-    }
+  margin-top: var(--gutter);
+  margin-bottom: var(--gutter);
+  font-size: var(--f-h2);
+  text-align: center;
+  font-family: var(--f-primary);
+  font-weight: var(--bold);
+  text-transform: uppercase;
+
+  @media screen and (min-width : 1024px){
+    font-size: var(--f-h1);
   }
+}
+
+.section__description {
+  text-align: center;
+  margin-top: var(--gutter);
+  margin-bottom: var(--gutter);
   
-  .section__description {
-    text-align: center;
-    margin-top: em(16px);
-    margin-bottom: em(16px);
-    
-    @media only screen and (min-width : 1024px){
-      width: 60%;
-      margin-left: auto;
-      margin-right: auto;   
-    }
+  @media screen and (min-width : 1024px){
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
-  
+}
+
+.decoration-top {
+  margin-bottom: -1px;
+  transform: rotate(180deg);
+}

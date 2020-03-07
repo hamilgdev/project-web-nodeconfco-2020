@@ -8,10 +8,10 @@
 @import 'styles/base/typography.scss';
 
 // Estilos utils assets
+@import 'styles/utils/layout.scss';
+@import 'styles/utils/btn.scss';
 @import 'styles/utils/section.scss';
 
-// Fontastic
-@import 'styles/fontastic.css';
 
 html {
   scroll-behavior: smooth;

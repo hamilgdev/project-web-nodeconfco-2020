@@ -9,11 +9,13 @@ body {
   padding: 0;
   font-family: sans-serif;
   line-height: 1.7;
+  font-family: var(--f-secondary);
 }
 
-h1, h2, h3{
+h1, h2, h3 {
   margin-top: 0;
   margin-bottom: 0;
+
 }
 
 p {
@@ -21,14 +23,18 @@ p {
   margin-bottom: 0;
 }
 
-a {
-  text-decoration: none;
-}
+a { text-decoration: none; }
 
 figure {
   margin: 0;
 }
 
+ul {
+  margin-top: 0;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
 
 img {
   display: block;

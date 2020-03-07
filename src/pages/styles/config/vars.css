@@ -1,25 +1,30 @@
 :root {
-    /* color palette */
-    --primary : #2D9983;
-    --secondary : #258A45;
-    --third : #86A120;
-    --four : #E6D027;
-  /*  Colores variantes */
-    --v-primary : #EBEBEB;
-    --v-secondary : #707070;
-  /* Color de parrafo */
-    --p-primary : #121112;
-  
-    /* Typography */
-    --font-title: 'Lato', sans-serif;
-    --font-subtitle: 'Montserrat', sans-serif;
-    /* Weight */
-    --normal : 400;
-    --semibold : 600;
-    --bold : 700;
-
-    /* Layout */
-    --gutter: 18px;
-    --max-width: 1366px;
-  
-  }
+  /* color palette */
+--c-primary: #2E6B41;
+--c-secundary: #2F9049;
+--c-third: #23A249;
+--c-four: #59C079;
+--c-five: #99CF67;
+--c-six: #D2E043;
+--c-text: #EBEBEB;
+--c-text-dark: #878C92;
+  /* layout */
+--gutter: 16px;
+--max-width: 1366px;
+  /* typography */
+--f-primary: 'Righteous', sans-serif;
+--f-secondary: 'Montserrat', sans-serif;
+  /* font size */
+--f-h1: 48px;
+--f-h2: 32px;
+--f-h3: 24px;
+--f-normal: 26px;
+--f-regular: 18px;
+--f-small: 16px;
+--f-smaller: 12px;
+  /* weight */
+--light: 300;
+--regular: 400;
+--medium: 500;
+--bold: 700;
+}
