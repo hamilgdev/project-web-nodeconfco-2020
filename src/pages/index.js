@@ -7,7 +7,7 @@ import "./styles.scss"
 
 const IndexPage = () => (
   <Layout>
-    {/* <SEO title="Home" /> */}
+    <SEO title="Home" />
   </Layout>
 )
 

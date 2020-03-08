@@ -41,6 +41,14 @@ module.exports = {
       options: {
           endpoint: 'https://nodeconf.us18.list-manage.com/subscribe/post?u=33c93ca7e73c6c27cd0325b9f&amp;id=e71faec96c',
       },
-  }
-  ],
+   },
+   {
+    resolve: 'gatsby-plugin-react-svg',
+    options: {
+      rule: {
+        include: `${__dirname}/src/images/svg`
+      }
+    },
+   }
+  ]
 }
