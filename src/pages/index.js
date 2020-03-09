@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Menu from "../components/Menu/Menu"
 import Tickets from "../components/section_tickets/Tickets"
-// import CFP from "../components/section_cfp/CFP"
+import CFP from "../components/section_cfp/CFP"
 
 import "./styles.scss"
 
@@ -46,6 +46,7 @@ class IndexPage extends React.Component {
     <Layout>
       <Menu />
       <Tickets />
+      <CFP />
     </Layout>
   
     );
