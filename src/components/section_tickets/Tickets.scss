@@ -1,0 +1,153 @@
+.section-tickets {
+  text-align: center;
+
+  &__title {
+    color: var(--c-six);
+  }
+
+  &__subtitle {
+    color: var(--c-text-dark);
+    font-size: var(--f-regular);
+    font-family: var(--f-primary);
+    text-transform: uppercase;
+
+    @media screen and (min-width : 1024px) {
+      font-size: var(--f-h3);
+    }  
+  }
+
+  &__description {
+    color: var(--c-text-dark);
+    font-size: var(--f-regular);
+
+    @media screen and (min-width : 1024px) {
+      font-size: var(--f-normal);
+    }  
+  }
+
+
+  .container-tickets {
+      display: grid;
+      margin-top: calc(var(--gutter) * 2);
+      margin-bottom: calc(var(--gutter) * 2);
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      justify-items: center;
+      grid-gap: var(--gutter);
+      grid-template-areas: 'top'
+                            'left'
+                            'right'
+                            'bottom';
+
+      @media screen and (min-width : 667px) {
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: 1fr 1fr 1fr;
+       grid-template-areas: 'top top'
+                           'left right'
+                           'bottom bottom';
+
+        & a:nth-child(1) {
+          grid-area: top;
+        }
+        & a:nth-child(2) {
+          grid-area: left;
+          justify-self: end;
+        }
+        & a:nth-child(3) {
+          grid-area: right;
+          justify-self: start;
+        }
+        // selector de ticket sould out
+        & div:nth-child(4) {
+          grid-area: bottom;
+        }
+      }
+    
+      @media screen and (min-width : 1024px) {
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: calc(var(--gutter) * 2) var(--gutter);
+        grid-template-areas: 'top top top'
+                           'left center right ';
+
+        & a:nth-child(2) {
+          grid-area: center;
+          justify-self: initial;
+        }
+        & a:nth-child(3) {
+          grid-area: right;
+          justify-self: start;
+        }
+        // selector de ticket sould out
+        & div:nth-child(4) {
+          grid-area: left;
+          justify-self: end;
+        }
+      }
+
+    .ticket-link:hover 
+    .ticket-price {
+      transition: .3s ease-out;
+      background-color: var(--c-primary);
+    }
+    
+    .ticket-card {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 50px 1fr;
+      grid-template-areas: 'name'
+                           'price'
+                           'soldOut';
+      overflow: hidden;
+      width: 220px;
+      height: 190px;  
+      background-color: var(--c-four);
+      font-family: var(--f-primary);
+      font-size: var(--f-regular);
+      color: var(--c-text);
+
+      @media screen and (min-width : 1024px) {
+        width: 300px;
+        height: 280px; 
+        font-size: var(--f-normal);
+      }
+
+    }
+
+    .ticket-name { grid-area: name; }
+
+    .ticket-price { grid-area: price; }
+
+    .ticket-soldOut { grid-area: soldOut; }
+
+    .ticket-decorative { 
+      position: absolute;
+      top: 135px;
+      width: 100%;
+      @media screen and (min-width : 1024px) {
+        top: 200px;
+      }
+    }
+
+    .ticket-name,
+    .ticket-price {
+      align-self: end;
+      text-transform: uppercase;        
+    }
+
+    // ticket sold out
+    .sold-out {
+      background-color: var(--c-primary);
+    }
+    // texto: ticket sold out
+    .ticket-soldOut {
+      color: var(--c-five);
+      text-transform: uppercase;
+      font-family: var(--f-secondary);
+    }
+  }
+}
