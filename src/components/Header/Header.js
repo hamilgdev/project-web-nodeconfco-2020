@@ -4,7 +4,7 @@ import React from "react"
 import Logo from "../images/logo"
 import HeaderSelva from "../../images/svg/header_selva.svg";
 
-import "./header.scss"
+import "./Header.scss"
 
 const Header = () => (
 
