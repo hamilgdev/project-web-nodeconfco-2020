@@ -39,7 +39,7 @@ const Header = () => (
       </div> 
     </div>
 
-    <a href="#" className="btn-cta btn">buy tickets</a>
+    <a href="https://ti.to/NodeConfCo/2020" target="__blank" className="btn-cta btn">buy tickets</a>
 
     <div className="header-background">
       <HeaderSelva />

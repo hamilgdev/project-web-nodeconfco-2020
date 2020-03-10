@@ -1,0 +1,145 @@
+.section-venue {
+  .venue-outer-wrap {
+    background-color: var(--c-four);
+  }
+
+  .venue-inner-wrap {
+    text-align: center;
+    color: var(--c-text);
+  }
+  .container-data {
+    font-family: var(--f-secondary);
+    font-size: var(--f-regular);
+    font-weight: var(--regular);
+    padding-bottom: var(--gutter);
+  }
+  &__title {
+    margin: 0;
+    padding-bottom: var(--gutter);
+    color: var(--c-six);
+    font-family: var(--f-primary);
+    font-size: var(--f-h2);
+  }
+  .btn-rutan {
+    margin: var(--gutter) 0;
+    justify-self: center;
+    grid-column: span 2;
+  }
+
+  .section-hotel {
+    text-align: center;
+    position: relative;
+
+    &__subtitle {
+      margin: 0;
+      letter-spacing: 1px;
+      padding-bottom: var(--gutter);
+      font-size: var(--f-normal);
+      font-weight: var(--regular);
+      font-family: var(--f-primary);
+      color: var(--c-six);
+      text-transform: uppercase;
+    }
+
+    .container-data {
+      font-family: var(--f-secondary);
+      font-size: var(--f-regular);
+      font-weight: var(--regular);
+      color: var(--c-text-dark);
+    }
+
+    .hotel-ramas {
+      position: relative;
+      z-index: 2;
+    }
+    .map_hotel {
+      position: relative;
+      max-width: 800px;
+      left: 260px;
+      padding-bottom: 50px;
+      top: -60px;
+      z-index: 1;
+    }
+
+    .btn-reservation {
+      margin: var(--gutter) 0;
+      justify-self: center;
+      grid-column: span 2;
+    }
+  }
+  .ramas__mobile {
+    display: none;
+  }
+
+  .section-code_conduct {
+    padding-top: 90px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    &__title {
+      margin: 0;
+      letter-spacing: 1px;
+      padding-top: 25px;
+      font-size: var(--f-normal);
+      font-weight: var(--regular);
+      font-family: var(--f-primary);
+      color: var(--c-six);
+    }
+
+    .jardin {
+      max-width: 700px;
+    }
+    .container-data {
+      max-width: 700px;
+      margin-right: 40px;
+      p {
+        text-align: left;
+        color: var(--c-text-dark);
+      }
+      .btn-more {
+        margin: var(--gutter);
+        justify-self: center;
+        grid-column: span 2;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .section-hotel {
+      .container-data {
+        display: none;
+      }
+
+      .hotel-ramas {
+        display: none;
+      }
+      .map_hotel {
+        left: 0px;
+        padding-bottom: 50px;
+        top: 10px;
+      }
+    }
+    .ramas__mobile {
+      display: block;
+      margin-bottom: 0px;
+      margin-top: 70px;
+    }
+
+    .section-code_conduct {
+      display: grid;
+      grid-template-columns: 1fr;
+      text-align: center;
+      padding: var(--gutter);
+      .jardin {
+        display: none;
+      }
+      .container-data {
+        margin-right: 0;
+        padding-bottom: 30px;
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
