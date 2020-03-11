@@ -92,7 +92,6 @@
           }
         }
       }
-
       .icons {
         display: flex;
         padding-top: 25px;
@@ -100,10 +99,15 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-
+        .orquideorama {
+          transition: .3s ease-in-out;
+          fill: var(--c-four);
+        }
+        & a:hover .orquideorama { fill: var(--c-six); }
         .icon {
           width: 65px;
           margin: var(--gutter);
+          fill: var(--c-text);
         }
       }
     }
