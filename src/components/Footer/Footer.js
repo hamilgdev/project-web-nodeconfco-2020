@@ -1,19 +1,18 @@
 import React, { Component } from "react"
+import Jardin from "../../images/svg/footer_jardin.svg"
 import "./Footer.scss"
 
 export default class Footer extends Component {
   render() {
     return (
-      <footer className="footer-component l-container--full  l-inner-p">
-        <p>NodeConf Colombia is an event by Mantid LLC -&nbsp;</p> 
-        <a
-          href="http://jsconf.com/codeofconduct.html"
-          target="__blank"
-          rel="noopener noreferrer"
-        >
-          Code of conduct
-        </a>
-      </footer>
+      <section className="section-footer">
+        <div className="decoretion-top">
+          <Jardin />{" "}
+        </div>
+        <div className="footer-inner-wrap  l-container  l-inner-p">
+          <p>NodeConf Colombia is an event by Mantid LLC </p>
+        </div>
+      </section>
     )
   }
 }
