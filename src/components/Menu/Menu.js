@@ -49,7 +49,7 @@ class Menu extends React.Component {
   render() {
     return (
     <nav className="main-nav">
-      <button className="btn-menu" id="btn-menu">
+      <button className="btn-menu" id="btn-menu" aria-label="button-menu">
         <span className="icon-bar">
           <svg width="48" height="24" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1.83333 16H23.1667C23.9 16 24.5 15.4 24.5 14.6667C24.5 13.9333 23.9 13.3333 23.1667 13.3333H1.83333C1.1 13.3333 0.5 13.9333 0.5 14.6667C0.5 15.4 1.1 16 1.83333 16ZM1.83333 9.33333H23.1667C23.9 9.33333 24.5 8.73333 24.5 8C24.5 7.26667 23.9 6.66667 23.1667 6.66667H1.83333C1.1 6.66667 0.5 7.26667 0.5 8C0.5 8.73333 1.1 9.33333 1.83333 9.33333ZM0.5 1.33333C0.5 2.06667 1.1 2.66667 1.83333 2.66667H23.1667C23.9 2.66667 24.5 2.06667 24.5 1.33333C24.5 0.6 23.9 0 23.1667 0H1.83333C1.1 0 0.5 0.6 0.5 1.33333Z" fill="#EBEBEB"/>

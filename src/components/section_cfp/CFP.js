@@ -55,7 +55,7 @@ const CFP = () => (
             </span> 12 apr 2020
           </p>
 
-          <a href="#" className="btn-submit btn">submit yours</a>
+          <a href="https://sessionize.com/nodeconfco2020" rel="noopener noreferrer" target="__blank" className="btn-submit btn">submit yours</a>
 
         </div>
 

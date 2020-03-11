@@ -1,42 +1,40 @@
-.about-component {
-  clip-path: polygon(50% 0%, 100% 5%, 100% 100%, 50% 100%, 0 100%, 0 5%);
-  background-color: var(--primary);
+.section-about {
+  .about-outer-wrap {
+    background-color: var(--c-secundary);
+  }
 
-  &.about {
+  .about-inner-wrap {
+    text-align: center;
+    color: var(--c-text);
+  }
 
-    .title {
-      color: var(--four);
-    }
-
-    .description {
-      color: var(--v-primary);
-      font-size: 18px;
-
-      &.pictures-2019 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 30px;
-        font-size: 24px;
-      }
-
-      .pictures {
-        border: 1px solid #fff;
-        background-color: var(--four);
-        font-family: var(--font-subtitle);
-        font-weight: var(--normal);
-        font-size: 18px;
-        color: var(--primary);
-        width: fit-content;
-        cursor: pointer;
-        padding: .3em 1.2em;
-        transition: all 0.3s ease-in-out;
-  
-        &:hover {
-          background-color: var(--secondary);
-          color: #fff;
-        }
-      }
+  &__title {
+    margin: 0;
+    padding-bottom: var(--gutter);
+    color: var(--c-six);
+    font-family: var(--f-primary);
+    font-size: var(--f-h1);
+  }
+  .container-data {
+    font-family: var(--f-secondary);
+    font-size: var(--f-regular);
+    font-weight: var(--regular);
+    padding-bottom: var(--gutter);
+    p {
+      font-size: var(--f-regular);
+      line-height: 2.3em;
     }
   }
+  .photos {
+    font-weight: var(--bold);
+    font-size: var(--f-regular);
+    text-transform: uppercase;
+    padding-bottom: 40px;
+  }
+  .btn-photos {
+    margin: var(--gutter) 0;
+    justify-self: center;
+    grid-column: span 2;
+  }
+
 }
