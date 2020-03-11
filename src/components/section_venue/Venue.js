@@ -1,5 +1,5 @@
 import React from "react"
-import Rutan from "../images/photo_rutaN"
+import RutaN from "../../images/svg/photo_rutaN.svg";
 import Hotelramas from "../../images/svg/hotel_ramas.svg"
 import Maphotel from "../images/hotel10"
 import Jardin from "../../images/svg/jardin.svg"
@@ -37,7 +37,7 @@ const Venue = () => (
       </div>
     </div>
     <div className="image-rutan">
-      <Rutan />
+      <RutaN />
     </div>
 
     <div className="section-hotel">

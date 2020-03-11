@@ -14,18 +14,8 @@
     padding-bottom: var(--gutter);
   }
   &__title {
-    margin: 0;
-    padding-bottom: var(--gutter);
     color: var(--c-six);
-    font-family: var(--f-primary);
-    font-size: var(--f-h2);
   }
-  .btn-rutan {
-    margin: var(--gutter) 0;
-    justify-self: center;
-    grid-column: span 2;
-  }
-
   .section-hotel {
     text-align: center;
     position: relative;
