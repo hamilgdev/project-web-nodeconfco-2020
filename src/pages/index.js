@@ -7,6 +7,7 @@ import CFP from "../components/section_cfp/CFP"
 import Venue from "../components/section_venue/Venue"
 import About from "../components/section_about/About"
 import Team from "../components/section_team/Team"
+import Sponsor from "../components/section_sponsors/index"
 import StayTuned from "../components/section_stay/ContactUs"
 
 import "./styles.scss"
@@ -54,6 +55,7 @@ class IndexPage extends React.Component {
       <Venue />
       <About/>
       <Team/>
+      <Sponsor/>
       <StayTuned/>
     </Layout>
   
