@@ -8,12 +8,13 @@ import Rappi from "../images/sponsor_rappi"
 import Platinum from "../../images/svg/arbusto_platinum.svg"
 import Gold from "../../images/svg/arbusto_gold.svg"
 import Silver from "../../images/svg/arbusto_silver.svg"
-
+import Suelo from "../../images/svg/suelo_bottom.svg"
 import "./sponsors.scss"
 
 const SectionSponsors = () => (
   <section className="section-sponsors-view" id="sponsors">
-    <h2 className="section-sponsors-view__title section__title">Sponsors</h2>
+    <div className="decoration-top"> <Suelo/></div>
+    <h2 className="section-sponsors-view__title">Sponsors</h2>
 
     <article className="section-sponsors-view__content">
       <div className="section-sponsors-view__medal platinum"><Platinum/></div>
