@@ -6,7 +6,7 @@ import Tickets from "../components/section_tickets/Tickets"
 import CFP from "../components/section_cfp/CFP"
 import Venue from "../components/section_venue/Venue"
 import About from "../components/section_about/About"
-import Team from "../components/section_team/Team"
+import Team from "../components/section_team/index"
 import Sponsor from "../components/section_sponsors/index"
 import StayTuned from "../components/section_stay/ContactUs"
 
