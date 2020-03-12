@@ -12,6 +12,7 @@
   z-index: 100;
   
   .btn-menu {
+    outline: none;
     margin: 0 var(--gutter);
     padding: 11px 9px;
     border: none;
@@ -19,6 +20,7 @@
     background-color: var(--c-four);
     cursor: pointer;
     transition: .3s ease-out;
+    z-index: 200;
     &:hover { background-color: var(--c-primary) !important; }
     .icon-bar {
       display: flex;
@@ -89,5 +91,26 @@
         height: 8rem;
         width: 100%;
       }
+  }
+
+  @media screen and (max-width : 1023px){
+
+    background-color: inherit;
+
+    .navigation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--c-five);
+      transform: none;
+      transition: .3s ease-out;
+      left: 0;
+      top: 0;
+      width: 100%;
+      position: absolute;
+      &.close {
+        transform: translateX(100%);
+      }
+    }
   }
 }
