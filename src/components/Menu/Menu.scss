@@ -95,7 +95,7 @@
 
   @media screen and (max-width : 1023px){
 
-    background-color: inherit;
+    // background-color: inherit;
 
     .navigation {
       display: flex;
@@ -104,9 +104,9 @@
       background-color: var(--c-five);
       transform: none;
       transition: .3s ease-out;
-      left: 0;
-      top: 0;
-      width: 100%;
+      right: 0;
+      top: 4rem;
+      width: 90%;
       position: absolute;
       &.close {
         transform: translateX(100%);
