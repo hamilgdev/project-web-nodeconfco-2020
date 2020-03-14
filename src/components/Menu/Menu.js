@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 
-// import BtnMenu from "../../images/icons/icon-menu.svg"
 import Logo from "../images/logo"
 import "./Menu.scss"
 

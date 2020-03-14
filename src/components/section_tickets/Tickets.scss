@@ -46,19 +46,22 @@
                            'left right'
                            'bottom bottom';
 
+        & div:nth-child(1),
         & a:nth-child(1) {
           grid-area: top;
         }
+        & div:nth-child(2),
         & a:nth-child(2) {
           grid-area: left;
           justify-self: end;
         }
+        & div:nth-child(3),
         & a:nth-child(3) {
           grid-area: right;
           justify-self: start;
         }
-        // selector de ticket sould out
-        & div:nth-child(4) {
+        & div:nth-child(4),
+        & a:nth-child(4) {
           grid-area: bottom;
         }
       }
@@ -73,23 +76,24 @@
         grid-template-areas: 'top top top'
                            'left center right ';
 
+        & div:nth-child(2),
         & a:nth-child(2) {
           grid-area: center;
           justify-self: initial;
         }
+        & div:nth-child(3),
         & a:nth-child(3) {
           grid-area: right;
           justify-self: start;
         }
-        // selector de ticket sould out
-        & div:nth-child(4) {
+        & div:nth-child(4),
+        & a:nth-child(4) {
           grid-area: left;
           justify-self: end;
         }
       }
 
-    .ticket-link:hover 
-    .ticket-price {
+    .ticket-link:hover .ticket-price {
       transition: .3s ease-out;
       background-color: var(--c-primary);
     }
@@ -101,7 +105,7 @@
       grid-template-rows: 1fr 50px 1fr;
       grid-template-areas: 'name'
                            'price'
-                           'soldOut';
+                           'info';
       overflow: hidden;
       width: 220px;
       height: 190px;  
@@ -122,7 +126,7 @@
 
     .ticket-price { grid-area: price; }
 
-    .ticket-soldOut { grid-area: soldOut; }
+    .ticket-info { grid-area: info; }
 
     .ticket-decorative { 
       position: absolute;
@@ -138,13 +142,16 @@
       align-self: end;
       text-transform: uppercase;        
     }
-
+     // ticket comming soon
+    .comming-soon {
+      background-color: var(--c-secundary);
+    }
     // ticket sold out
     .sold-out {
       background-color: var(--c-primary);
     }
     // texto: ticket sold out
-    .ticket-soldOut {
+    .ticket-info {
       color: var(--c-five);
       text-transform: uppercase;
       font-family: var(--f-secondary);
