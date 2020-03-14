@@ -151,10 +151,11 @@ class Menu extends React.Component {
               <a
                 className="main-menu__link"
                 tittle="v.2019"
-                href="#v2019"
+                target="__blank"
+                href="https://2019.nodeconf.co/"
                 onClick={e => this.scrollMobile(e)}
               >
-                v.2020
+                v.2019
             </a>
             </li>
 
