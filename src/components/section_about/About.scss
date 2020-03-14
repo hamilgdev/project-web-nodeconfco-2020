@@ -22,7 +22,12 @@
     padding-bottom: var(--gutter);
     p {
       font-size: var(--f-regular);
-      line-height: 2.3em;
+      line-height: 1.7;
+      @media screen and (min-width : 1024px) {
+        font-size: var(--f-normal);
+        font-weight: var(--light);
+        width: 100%;
+      }
     }
   }
   .photos {

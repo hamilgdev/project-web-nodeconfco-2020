@@ -16,6 +16,13 @@
   &__title {
     color: var(--c-six);
   }
+  &__information {
+    font-size: var(--f-normal);
+  }
+  .btn-rutan {
+    display: inline-block;
+    margin: calc(var(--gutter)) 0; }
+
   .section-hotel {
     text-align: center;
     position: relative;
@@ -43,18 +50,16 @@
       z-index: 2;
     }
     .map_hotel {
-      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: -4rem;
       max-width: 800px;
-      left: 260px;
-      padding-bottom: 50px;
-      top: -60px;
       z-index: 1;
     }
 
     .btn-reservation {
-      margin: var(--gutter) 0;
-      justify-self: center;
-      grid-column: span 2;
+      display: inline-block;
+      margin-top: calc(var(--gutter) * 4);
     }
   }
   .ramas__mobile {
@@ -62,14 +67,11 @@
   }
 
   .section-code_conduct {
-    padding-top: 90px;
     display: grid;
     grid-template-columns: 1fr 2fr;
 
     &__title {
-      margin: 0;
       letter-spacing: 1px;
-      padding-top: 25px;
       font-size: var(--f-normal);
       font-weight: var(--regular);
       font-family: var(--f-primary);
@@ -80,21 +82,23 @@
       max-width: 700px;
     }
     .container-data {
-      max-width: 700px;
+      max-width: 900px;
       margin-right: 40px;
+      text-align: center;
       p {
+        margin: var(--gutter) auto;
         text-align: left;
         color: var(--c-text-dark);
       }
       .btn-more {
-        margin: var(--gutter);
-        justify-self: center;
-        grid-column: span 2;
+        display: inline-block;
+        margin: var(--gutter) auto;
       }
     }
   }
 
   @media only screen and (max-width: 1024px) {
+    .section-venue__information { font-size: var(--f-regular); }
     .section-hotel {
       .container-data {
         display: none;
@@ -107,6 +111,10 @@
         left: 0px;
         padding-bottom: 50px;
         top: 10px;
+      }
+      .btn-reservation {
+        display: inline-block;
+        margin-top: var(--gutter);
       }
     }
     .ramas__mobile {

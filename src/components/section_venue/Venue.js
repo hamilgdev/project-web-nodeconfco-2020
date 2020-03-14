@@ -9,7 +9,7 @@ const Venue = () => (
   <section className="section-venue" id="venue">
     <div className="venue-outer-wrap">
       <div className="venue-inner-wrap  l-container  l-inner-p">
-        <h2 className="section-venue__title section__title">Venue</h2>
+        <h2 className="section-venue__title section__title">venue</h2>
 
         <div className="container-data section__description">
           <p className="section-venue__information section__description">
@@ -41,18 +41,18 @@ const Venue = () => (
     </div>
 
     <div className="section-hotel">
-      <h2 className="section-hotel__subtitle section__subtitle">
+      <h3 className="section-hotel__subtitle section__subtitle">
         Hotels we recomend
-      </h2>
+      </h3>
 
       <div className="container-data section__description">
-        <p className="section-venue__information section__description">
+        <p className="section-venue__information">
           Calle 10 A N° 34-11
         </p>
-        <p className="section-venue__information section__description">
+        <p className="section-venue__information">
           Phone (+57 4) 448-10-34
         </p>
-        <p className="section-venue__information section__description">
+        <p className="section-venue__information">
           Medellín, Antioquía
         </p>
       </div>
@@ -78,14 +78,14 @@ const Venue = () => (
       <Hotelramas />
     </div>
 
-    <div className="section-code_conduct">
+    <div className="section-code_conduct  l-inner-p">
       <div className="jardin">
         <Jardin />
       </div>
-      <div className="container-data section__description">
-        <h2 className="section-code_conduct__title section__title">
-          Code conduct
-        </h2>
+      <div className="container-data">
+        <h3 className="section-code_conduct__title section__title">
+          code conduct
+        </h3>
         <p className="section-code_conduct__information section__description">
           NodeConf is dedicated to providing a harassment-free conference
           experience for everyone, regardless of gender, gender identity and
