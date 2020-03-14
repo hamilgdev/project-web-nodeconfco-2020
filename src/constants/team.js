@@ -1,14 +1,14 @@
-import Julian from "../components/images/julian";
-import Adrian from "../components/images/adrian";
-import Alejandro from "../components/images/alejandro";
-import Maleja from "../components/images/maleja";
-import Diego from "../components/images/diego";
-import Sebastian from "../components/images/sebastian";
-import Jonathan from "../components/images/jonathan";
-import Nicolle from "../components/images/nicolle";
-import Hamilton from "../components/images/hamilton";
-import Stiwar from "../components/images/stiwar";
-import Jorman from "../components/images/jorman";
+import Julian from "../components/images/team/julian";
+import Adrian from "../components/images/team/adrian";
+import Alejandro from "../components/images/team/alejandro";
+import Maleja from "../components/images/team/maleja";
+import Diego from "../components/images/team/diego";
+import Sebastian from "../components/images/team/sebastian";
+import Jonathan from "../components/images/team/jonathan";
+import Nicolle from "../components/images/team/nicolle";
+import Hamilton from "../components/images/team/hamilton";
+import Stiwar from "../components/images/team/stiwar";
+import Jorman from "../components/images/team/jorman";
 
 export const team = {
   adrian: {

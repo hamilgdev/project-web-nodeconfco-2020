@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import Menu from "../components/Menu/Menu"
 import Tickets from "../components/section_tickets/Tickets"
 import CFP from "../components/section_cfp/CFP"
+import Speakers from "../components/section_speakers/index"
 import Venue from "../components/section_venue/Venue"
 import About from "../components/section_about/About"
 import Team from "../components/section_team/index"
@@ -52,6 +53,7 @@ class IndexPage extends React.Component {
       <Menu />
       <Tickets />
       <CFP />
+      <Speakers />
       <Venue />
       <About/>
       <Team/>

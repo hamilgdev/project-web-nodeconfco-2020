@@ -1,0 +1,91 @@
+.section-speakers {
+
+  &__title {
+    color: var(--c-six);
+  }
+
+  .content-speakers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+    .card-speaker {
+      margin: var(--gutter);
+      max-width: 350px;
+      background-color: var(--c-secundary);
+      color: var(--c-text);
+      text-align: center;
+
+      &__img { 
+        background: linear-gradient(180deg, #FFF 65%, var(--c-secundary) 100%);
+       }
+
+      @media screen and (min-width : 1024px) {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 200px;
+        grid-template-rows: 1fr;
+        max-width: 800px;
+        margin: calc(var(--gutter) * 4) 0;
+
+        // imagen de speakers
+        & figure {
+          background: linear-gradient(180deg, #FFF 65%, var(--c-secundary) 100%);
+          @media screen and (min-width : 1024px) {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 375px;
+            background: transparent;
+            transform: translate(-50%, -50%);
+          }
+        }
+
+
+        .card-inner-wrap {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          max-width: 700px;
+          height: 260px;
+          margin-left: 12rem;
+        }
+
+        &:nth-child(2n) figure {
+          left: initial;
+          right: 0;
+          transform: translate(50%, -50%);
+        }
+
+        &:nth-child(2n) div {
+          margin-left: initial;
+        } 
+      }
+
+      &__name {
+        margin: var(--gutter) 0;
+        font-size: var(--regular);
+        font-family: var(--f-primary);
+        text-transform: uppercase;
+      }
+
+      &__description {
+        font-size: var(--f-small);
+        padding: 0 var(--gutter);
+      }
+
+      &__social {
+        display: inline-block;
+        margin: var(--gutter) 0;
+        color: var(--c-six);
+        font-family: var(--f-primary);
+        text-transform: uppercase;  
+      }
+
+    }
+
+} 
