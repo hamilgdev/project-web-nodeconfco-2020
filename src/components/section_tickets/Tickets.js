@@ -15,7 +15,7 @@ const Tickets = () => (
 
     <div className="container-tickets">
 
-      <a href="#" className="ticket-link">
+      <a href="https://ti.to/NodeConfCo/2020" className="ticket-link">
         <div className="ticket-card">
           <h3 className="ticket-name">late bird</h3>
           <p className="ticket-price">
@@ -27,7 +27,7 @@ const Tickets = () => (
         </div>  
       </a>
 
-      <a href="#" className="ticket-link">
+      {/* <a href="#" className="ticket-link"> */}
         <div className="ticket-card">
           <h3 className="ticket-name">second early bird</h3>
           <p className="ticket-price">
@@ -37,19 +37,20 @@ const Tickets = () => (
             <RamoFlorez />
           </span>
         </div> 
-      </a>
+      {/* </a> */}
 
-      <a href="#" className="ticket-link">
-        <div className="ticket-card">
+      {/* <a href="#" className="ticket-link"> */}
+        <div className="ticket-card sold-out">
           <h3 className="ticket-name">regular</h3>
           <p className="ticket-price">
             <span className="ticket-symbol">$</span>125
           </p>
+          <p className="ticket-soldOut">sold out</p>
           <span className="ticket-decorative">
             <RamoFlorez />
           </span>
         </div> 
-      </a>
+      {/* </a> */}
 
       {/* <a href="#" className="ticket-link "> */}
         <div className="ticket-card sold-out">
