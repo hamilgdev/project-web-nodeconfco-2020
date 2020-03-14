@@ -9,6 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
   }
 
     .card-speaker {
@@ -84,6 +85,9 @@
         color: var(--c-six);
         font-family: var(--f-primary);
         text-transform: uppercase;  
+        &:hover{
+          color: var(--c-text);
+        }
       }
 
     }

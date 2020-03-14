@@ -1,0 +1,69 @@
+:root {
+  /* color palette */
+  --c-primary: #2e6b41;
+  --c-secundary: #2f9049;
+  --c-third: #23a249;
+  --c-four: #59c079;
+  --c-five: #99cf67;
+  --c-six: #d2e043;
+  --c-text: #ebebeb;
+  --c-text-dark: #878c92;
+  /* layout */
+  --gutter: 16px;
+  --max-width: 1366px;
+  /* typography */
+  --f-primary: "Righteous", sans-serif;
+  --f-secondary: "Montserrat", sans-serif;
+  /* font size */
+  --f-h1: 48px;
+  --f-h2: 32px;
+  --f-h3: 24px;
+  --f-normal: 26px;
+  --f-regular: 18px;
+  --f-small: 16px;
+  --f-smaller: 12px;
+  /* weight */
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --bold: 700;
+}
+
+.l-container,
+.l-container--full {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.l-container--full {
+  max-width: 100%;
+}
+
+.l-inner-p {
+  padding-top: calc(var(--gutter) * 3);
+  padding-bottom: calc(var(--gutter) * 3);
+  @media screen and (max-width: 1024px) {
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+  }
+}
+
+// -------------------------------------------------------------------------------------------
+
+.page-schedule {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  .container {
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--f-primary);
+    font-size: var(--f-h1);
+    font-weight: var(--bold);
+    color: var(--c-primary);
+    display: flex;
+    letter-spacing: 3px;
+  }
+
+}
