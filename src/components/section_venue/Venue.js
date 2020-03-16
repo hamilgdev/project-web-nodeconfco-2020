@@ -42,7 +42,7 @@ const Venue = () => (
 
     <div className="section-hotel">
       <h3 className="section-hotel__subtitle section__subtitle">
-        Hotels we recomend
+        Hotel we recomend
       </h3>
 
       <div className="container-data section__description">
