@@ -1,8 +1,6 @@
 .section-team {
-  margin-bottom: 90px;
   .inner-wrap-desktop {
     display: flex;
-    margin-top: 110px;
     &.additional-row {
       margin-top: -90px;
     }
@@ -158,11 +156,6 @@
       justify-content: center;
     }
 
-    .inner-wrap-desktop {
-      &.additional-row {
-        margin-top: -60px;
-      }
-    }
   }
   @media only screen and (max-width: 768px) {
     &__content {

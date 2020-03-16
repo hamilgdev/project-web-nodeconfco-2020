@@ -4,7 +4,7 @@ import { team } from "../../constants/team"
 import "./team.scss"
 
 const sectionTeam = () => (
-  <section className="section-team" id="team">
+  <section className="section-team  l-container  l-inner-p" id="team">
     <h2 className="section-team__title section__title">Our team</h2>
 
     <div className="inner-wrap-desktop first-row">
