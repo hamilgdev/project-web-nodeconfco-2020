@@ -23,11 +23,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `NodeConfCo 2020`,
+        short_name: `NodeConfCo 2020`,
         start_url: `/`,
-        background_color: `#2d9983`,
-        theme_color: `#2d9983`,
+        background_color: `#2E6B41`,
+        theme_color: `#2E6B41`,
         display: `minimal-ui`,
         icon: `src/images/logo.png`, // This path is relative to the root of the site.
       },
