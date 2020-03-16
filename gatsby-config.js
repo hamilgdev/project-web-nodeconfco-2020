@@ -29,12 +29,12 @@ module.exports = {
         background_color: `#2E6B41`,
         theme_color: `#2E6B41`,
         display: `minimal-ui`,
-        icon: `src/images/logo.png`, // This path is relative to the root of the site.
+        icon: `src/images/icon-logo.jpg`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
     `gatsby-plugin-sass`,
     {
       resolve: 'gatsby-plugin-mailchimp',
